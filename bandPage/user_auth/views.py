@@ -7,6 +7,7 @@ from user_auth.forms import SignUpForm
 # Create your views here.
 
 def login_user(request):
+    ''' This function renders login.html '''
     return render(request, 'registration/login.html')
 
 # Old placeholder register method superseded below
@@ -16,6 +17,13 @@ def login_user(request):
 # Followed this tutorial on how to make a register page with custom inputs:
 # https://simpleisbetterthancomplex.com/tutorial/2017/02/18/how-to-create-user-sign-up-view.html#sign-up-with-extra-fields
 def register(request):
+    '''
+    This function registers new users.
+
+    If registration is successful it redirects the now logged in user to the home page.
+    If not it redirects them back to the registration page.
+    
+    '''    
     if request.method == 'POST':
         form = SignUpForm(request.POST)
         if form.is_valid():
