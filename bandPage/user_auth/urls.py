@@ -3,6 +3,8 @@ from . import views
 from django.contrib import admin
 from django.contrib.auth import views as auth_views
 
+''' This urls.py script pertains to user_auth pages provides a url to each corresponding view outlined in views.py. '''
+
 app_name = 'user_auth'
 urlpatterns = [
     path('login/', auth_views.LoginView.as_view(), name='login'),
