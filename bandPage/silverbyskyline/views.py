@@ -12,6 +12,17 @@ from .models import Video
 # I didn't think was very clear that they weren't actually voting.
 @login_required(login_url='/login')
 def silverbyskyline(request):
+    '''
+    This function renders home.html.
+
+    The page is rendered at a url supplied by urls.py and loads the provide youtube video(s).
+
+    :param Video Videos: A list of videos
+    
+    :returns: home.html rendered
+    :rtype: html request
+    
+    '''
     # The code below grabs the required video before the page loads
     videos = Video.objects.all()
     return render(request, 'home.html', context={'videos': videos})
