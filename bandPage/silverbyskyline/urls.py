@@ -5,6 +5,8 @@ from .models import Post
 
 ''' This urls.py script pertains to band pages provides a url to each corresponding view outlined in views.py. '''
 
+
+
 app_name = 'silverbyskyline'
 urlpatterns = [
     path('', views.silverbyskyline, name='silverbyskyline'),

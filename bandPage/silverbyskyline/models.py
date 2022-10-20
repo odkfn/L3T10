@@ -11,8 +11,10 @@ class Post(models.Model):
     The Post model is utilised to create blog-style update posts.
 
     :param str title: The title of the post
-    :param str body: The body of the post
-    :param DateTime date: The date the post was made
+    
+    :param str body: The body of the post
+    
+    :param DateTime date: The date the post was made
 
     :returns: The title of the post
     :rtype: str
@@ -35,8 +37,10 @@ class Video(models.Model):
     The Video model is utilised to embed a youtube video on the page.
 
     :param str title: The title of the video
-    :param DateTime added: The date when the video was added
-    :param str url: The url of the video
+    
+    :param DateTime added: The date when the video was added
+    
+    :param str url: The url of the video
 
     :returns: The title of the post
     :rtype: str
