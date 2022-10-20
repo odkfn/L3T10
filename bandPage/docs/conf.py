@@ -6,6 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+# Source for this: https://www.freecodecamp.org/news/sphinx-for-django-documentation-2454e924b3bc/
 import os
 import sys
 import django # as of Sphinx 1.7 need to import Django
