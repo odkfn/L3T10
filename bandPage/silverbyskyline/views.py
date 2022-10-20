@@ -14,4 +14,4 @@ from .models import Video
 def silverbyskyline(request):
     # The code below grabs the required video before the page loads
     videos = Video.objects.all()
-    return render(request, 'home.html', context={'videos': videos})
+    return render(request, 'index.html', context={'videos': videos})
